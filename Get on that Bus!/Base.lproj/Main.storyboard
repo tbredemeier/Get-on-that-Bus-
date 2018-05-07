@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -48,13 +49,29 @@
                     <view key="view" contentMode="scaleToFill" id="oSs-Fi-Pth">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Mk-is-Q33">
+                                <rect key="frame" x="0.0" y="64" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7Mk-is-Q33" secondAttribute="height" multiplier="1:1" id="7fJ-iZ-NOp"/>
+                                </constraints>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7Mk-is-Q33" firstAttribute="top" secondItem="q5U-cb-A1t" secondAttribute="top" id="EEC-ig-2ix"/>
+                            <constraint firstItem="7Mk-is-Q33" firstAttribute="trailing" secondItem="q5U-cb-A1t" secondAttribute="trailing" id="kSV-uO-jKo"/>
+                            <constraint firstItem="7Mk-is-Q33" firstAttribute="leading" secondItem="q5U-cb-A1t" secondAttribute="leading" id="lbS-8f-9K5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="q5U-cb-A1t"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="7Mk-is-Q33" id="w4K-oD-i5C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3nL-6B-nsS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1828" y="134"/>
+            <point key="canvasLocation" x="1828" y="133.5832083958021"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dua-42-mBu">

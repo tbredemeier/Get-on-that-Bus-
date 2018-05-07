@@ -18,6 +18,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     let address = "https://api.wmata.com/Bus.svc/json/jStops/"
     let apiKey = "?api_key=e13626d03d8e4c03ac07f95541b3091b"
     let region = "&Lat=38.89731&Lon=-77.00626&Radius=2000"
+    var selectedAnnotation = MKPointAnnotation()
 
 
     override func viewDidLoad() {
@@ -76,7 +77,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     }
 
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        selectedAnnotation = view.annotation as! MKPointAnnotation
         performSegue(withIdentifier: "SegueToDetailVC", sender: nil)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dvc = segue.destination as! DetailViewController
+        dvc.selectedAnnotation = selectedAnnotation
     }
 }
 
