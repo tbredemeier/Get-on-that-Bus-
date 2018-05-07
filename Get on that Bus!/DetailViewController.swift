@@ -13,6 +13,9 @@ import CoreLocation
 class DetailViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var routesLabel: UILabel!
+
     let locationManager = CLLocationManager()
     var selectedAnnotation = MKPointAnnotation()
 
@@ -21,6 +24,8 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
         mapView.addAnnotation(selectedAnnotation)
+        nameLabel.text = "Stop: \(selectedAnnotation.title!)"
+        routesLabel.text = selectedAnnotation.subtitle
     }
 
     override func didReceiveMemoryWarning() {

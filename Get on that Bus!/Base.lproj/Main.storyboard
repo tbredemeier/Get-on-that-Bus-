@@ -56,17 +56,43 @@
                                     <constraint firstAttribute="width" secondItem="7Mk-is-Q33" secondAttribute="height" multiplier="1:1" id="7fJ-iZ-NOp"/>
                                 </constraints>
                             </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJM-7O-MH0">
+                                <rect key="frame" x="37" y="447" width="300" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="nGo-dO-PIF"/>
+                                    <constraint firstAttribute="height" constant="100" id="rdd-Zz-TTm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSx-6B-WkV">
+                                <rect key="frame" x="37" y="547" width="300" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="S0d-g8-Jzj"/>
+                                    <constraint firstAttribute="width" constant="300" id="uWD-Fh-uYV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="7Mk-is-Q33" firstAttribute="top" secondItem="q5U-cb-A1t" secondAttribute="top" id="EEC-ig-2ix"/>
+                            <constraint firstItem="VSx-6B-WkV" firstAttribute="centerX" secondItem="oSs-Fi-Pth" secondAttribute="centerX" id="NJx-XE-3go"/>
+                            <constraint firstItem="VSx-6B-WkV" firstAttribute="top" secondItem="kJM-7O-MH0" secondAttribute="bottom" id="jUO-zB-y8R"/>
                             <constraint firstItem="7Mk-is-Q33" firstAttribute="trailing" secondItem="q5U-cb-A1t" secondAttribute="trailing" id="kSV-uO-jKo"/>
                             <constraint firstItem="7Mk-is-Q33" firstAttribute="leading" secondItem="q5U-cb-A1t" secondAttribute="leading" id="lbS-8f-9K5"/>
+                            <constraint firstItem="kJM-7O-MH0" firstAttribute="centerX" secondItem="oSs-Fi-Pth" secondAttribute="centerX" id="nzN-tn-bCn"/>
+                            <constraint firstItem="kJM-7O-MH0" firstAttribute="top" secondItem="7Mk-is-Q33" secondAttribute="bottom" constant="8" id="wLV-ih-Wdd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q5U-cb-A1t"/>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="7Mk-is-Q33" id="w4K-oD-i5C"/>
+                        <outlet property="nameLabel" destination="kJM-7O-MH0" id="HRZ-eF-ATF"/>
+                        <outlet property="routesLabel" destination="VSx-6B-WkV" id="DIW-kt-4DP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3nL-6B-nsS" userLabel="First Responder" sceneMemberID="firstResponder"/>
