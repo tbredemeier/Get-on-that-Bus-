@@ -12,6 +12,7 @@
 		AE4E80B9209FD924009B293B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE4E80B7209FD924009B293B /* Main.storyboard */; };
 		AE4E80BB209FD929009B293B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE4E80BA209FD929009B293B /* Assets.xcassets */; };
 		AE4E80BE209FD929009B293B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE4E80BC209FD929009B293B /* LaunchScreen.storyboard */; };
+		AE4E80C6209FE30E009B293B /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4E80C5209FE30E009B293B /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		AE4E80BA209FD929009B293B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE4E80BD209FD929009B293B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE4E80BF209FD929009B293B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE4E80C5209FE30E009B293B /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				AE4E80BA209FD929009B293B /* Assets.xcassets */,
 				AE4E80BC209FD929009B293B /* LaunchScreen.storyboard */,
 				AE4E80BF209FD929009B293B /* Info.plist */,
+				AE4E80C5209FE30E009B293B /* SwiftyJSON.swift */,
 			);
 			path = "Get on that Bus!";
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE4E80C6209FE30E009B293B /* SwiftyJSON.swift in Sources */,
 				AE4E80B6209FD924009B293B /* ViewController.swift in Sources */,
 				AE4E80B4209FD924009B293B /* AppDelegate.swift in Sources */,
 			);
