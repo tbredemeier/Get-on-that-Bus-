@@ -34,11 +34,27 @@
                     <navigationItem key="navigationItem" id="bRn-zJ-jxh"/>
                     <connections>
                         <outlet property="mapView" destination="Hhl-f8-aSM" id="Bqw-t3-n9g"/>
+                        <segue destination="MEb-50-0fl" kind="show" identifier="SegueToDetailVC" id="PHa-PV-TJU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="5tA-rj-tuU">
+            <objects>
+                <viewController id="MEb-50-0fl" customClass="DetailViewController" customModule="Get_on_that_Bus_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oSs-Fi-Pth">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="q5U-cb-A1t"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3nL-6B-nsS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1828" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dua-42-mBu">
